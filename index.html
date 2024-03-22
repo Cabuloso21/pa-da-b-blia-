@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+</head>
+<body>
+
+
+<style>
+ * {
+   margin: 0;
+  background: none;
+}
+  
+  
+       
+        .logo {
+           background-color: white;
+           color: #FF7700;
+          font-size: 25px;
+          font-weight: bold;
+          
+           padding: 20px;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+          border-bottom: nonepx solid none;
+ 
+        }
+        
+        
+        
+        
+ .container {
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #FF7700;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 250px;
+ 
+ }
+
+.title {
+ color: black;
+ font-size: 30px;
+ font-weight: bold; 
+  text-align: center;
+}
+
+
+ .subtitulo{
+ color: white;
+  font-size: 17px;
+   font-weight: bold;
+   margin-top: 20px;
+   text-align: absolute;
+   padding-left: 0px;
+   
+   margin-bottom: 1px;
+   
+ }
+  
+  
+ 
+.arrow {
+ display: inline-block;
+ width: 10px;
+ height: 10px;
+ border-top: 2px solid white;
+ border-right: 2px solid white;
+ transform: rotate(-130deg);
+ position: center;
+ top: 1px;
+ left: 15px;
+}
+  
+  
+  
+  .card {
+  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px;
+    width: 290px;
+    height: 120px;
+   background: white;
+    
+ border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+  
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.name {
+ font-size: 19px;
+ text-align: absolute;
+ font-weight: bold;
+ color: #FF7700;
+  margin-left: 1px;
+  margin-top: 0px;
+  line-height: 1.7;
+  
+} 
+          
+ .descricao {
+ color: black;
+ font-size: 15.55px; 
+ text-align: center; 
+ margin-top: 0px;
+ padding: 12px; 
+ line-height: 1.7;
+}
+  
+  
+ .titulo {
+ color: black;
+ font-size: 22px;
+ font-weight: bold;
+ text-align: center;
+ margin-top: 50px;
+ margin-bottom: 0px;
+ padding: 10px; 
+ }     
+  
+  .texto {
+  color: white;
+ font-size: 15px;
+ font-weight: bold;
+ text-align: center;
+ margin-top: 10px;
+ margin-bottom: 3px;
+ padding: 10px; 
+  background:  #FF7700;
+   margin-left: 50px; 
+    margin-right: 50px;
+    border-radius: 50px;
+    border-bottom: 1px solid none;
+    
+  }     
+  
+  
+  
+ 
+  
+  
+  .text {
+   color: #FF7700;
+    font-size: 22px;
+   font-weight: bold;
+    text-align: absolute;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    
+  }
+        
+  
+  p {  
+ margin-top: 10px;
+ font-size: 17px;
+ color: black;
+  margin-left: 0px; 
+   margin-right: 20px;
+   text-align: absolute;
+   line-height: 1.7;
+    
+ }
+  
+  
+  
+  ul {
+           list-style: none;
+            
+           padding: 10px;
+           display: flex;
+    
+    
+           
+           
+        }
+        
+        
+        
+       a {
+           color: red;
+           text-decoration: none;
+           font-size: 16px;
+           font-weight: bold;
+            background: #cc3;
+            border-none;
+             border-radius: 10px;
+            padding: 8px;
+ }
+        
+        
+   .categoria {
+   
+     max-width: 800px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #FF7700;
+   
+    height: 700%;
+     
+    
+   }      
+  
+  .nome {    
+  color: black;
+  font-size: 19px;
+  font-weight: bold;
+  text-align: absolute;
+  margin-top: 50px;
+   margin-bottom: 20px;
+   margin-left: 0px;
+  }
+  
+  
+  ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    li {
+      margin: 10px;
+      font-size: 18px;
+      color: white;
+      
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .opcões {
+   
+   background: white;
+   border:  1px solid #ccc;  
+    border-radius: 15px;
+    max-width: 300px;
+    margin: 15px auto;
+    padding: 10px;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 600%;
+    
+   
+    
+ }
+    
+    
+  
+   .description {
+   color: black;
+   font-size: 17px;     
+   font-weight: none;
+   text-align: absolute;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+   line-height: 1.7; 
+}
+ 
+  
+ 
+
+  button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #cc1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-top: 10px;
+  height: 40px;
+  display: flex;
+  
+  justify-content: absolute;
+  margin-bottom: 30px;
+}
+
+  
+  
+  .price {
+  color: #cc1;
+   font-size: 30px;
+   font-weight: bold;
+   text-align: center;
+    margin-top: 10px;
+  }
+  
+  
+  h5 {
+   color: orange;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  h2{
+  color: white;
+   font-size: 18px;
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+  
+  
+  
+  footer {
+ background-color: #333;
+ padding: 10px;
+ margin-top: 120px;
+ border-bottom: 1px solid white; 
+    
+  }
+  
+
+ .liste {
+ margin-top: 18px;
+ font-size: 16px;
+ color: silver;
+  text-align: absolute; 
+ }
+  
+ 
+
+  
+ .brand p {
+ font-size: 15px;
+ color: silver;
+ margin-top: 50px;
+ text-align: absolute;
+}
+  
+  
+  
+  
+  
+  
+  
+ </style>
+  
+
+ <div class="logo">Salão do Reino</div>
+
+</div>
+ <div class="container">
+ 
+   <div class="title">Fortaleça sua fé e amizade com Deus</div>
+ 
+
+   <div class="subtitulo">É pra você que está buscando conhecimento verdadeiro 
+     da palavra do nosso amoroso criador.</div>
+ </div>
+</div>
+
+  
+
+ 
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+	
+
+
+<a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=55993470217" target="_blank">
+<i class="fa fa-whatsapp"></i>
+</a>
+
+ <div class="titulo">Estudo a Biblia conosco e desenvolva amor e fé em Deus</div>
+ </div>
+ 
+  
+<div class="titulo">Veja o que você vai aprender</div>
+ 
+
+
+ <div class="card">
+ <div class="name">Quem é Deus?</div>
+ <div class="descricao">Você vai aprender a trabalhar direto da sua casa, investindo pouco, 
+ e ganhando um bom dinheiro todo mês.
+ </div>
+ </div>
+
+  <div class="card">
+ <div class="name">Como ter uma amizade forte com Deus?.</div>
+ <div class="descricao">Você vai aprender varias estrategias, para alcançar clientes, oferecer para as pessoas
+   certa, e efetuar vendas.</div>
+    
+ </div>
+    
+  
+    
+    
+    
+ 
+  
+
+
+
+  
+  
+  
+ 
+
+
+
+    
+<div class="titulo">Adquira conhecimento, coloque em pratica, e tenha prosperidade</div>
+ </div>
+</div>
+
+ 
+ <div class="opcões">
+   
+   
+   <div class="text">Adquira conhecimento e coloque em pratica</div>
+
+<div class="description">Sabemos que o conhecimento e a pratica, é o melhor caminho para o sucesso, é isso que faz muitas pessoas comuns a mudaren de vida.</div>
+  
+   
+   
+  <div class="text">Seja um empreendedor de sucesso</div>
+
+  <div class="description">Tudo que você precisa está aqui para se tornar um empreendedor de sucesso.</div>
+  
+ 
+<div class="text">Alcançe a liberdade financeira e seus objetivos</div>
+ 
+<div class="description">Atingir metas e objetivos financeiros pode demorar, mais com o emprendimento certo,
+  seus objetivos se tornan realidade em pouco tempo.</div>
+
+
+
+
+   
+   
+   
+   
+  
+  
+  
+  <div class="text">Transforme sua paixão em uma verdadeira fonte de renda</div>
+</div>
+  
+</div>
+</div>
+  
+
+
+
+<div class="text">Por quê devo empreender?</div>
+ </div>
+</div>
+<div class="text">Por varios motivo</div>
+ </div>
+</div>
+
+<div class="categoria">
+<div class="nome">•Independencia financeira:</div>
+
+<p>Independência financeira</p>
+
+<div class="nome">•Seja dono do seu proprio negocio:</div>
+<p>Empreender te dar a possibilidade de ser seu próprio chefe
+ também a capacidade de tomar suas proprias decições sobre
+horário de trabalho.</p>
+
+<div class="nome">•Realização pessoal:</div>
+
+<p>Construir e gerenciar um negocio bem sucedido, pode te proporcionar uma profunda 
+  sensação de realização pessoal.
+</p>
+
+
+<div class="nome">•Potencial de crescimento:</div>
+<p>Ti dar a oportunidade de expandir e crescer seu negoçio, permitindo abrir varias porta de mercado.</p> 
+  
+
+<div class="nome">•Liberdade:</div>
+<p>Empreender ti dar a liberdade de decidir por se proprio guando e como trabalhar, sem patrão toda hora te dando ordens,
+  também o previlegio de ficar mais tempo com sua familia.</p> 
+  
+</div>
+</div>
+
+<div class="text">Desperte a força do empreendedor que existe dentro de você</div>
+ </div>
+</div>
+
+<div class="nome">Acesse agora nosso curso 100% gratuito</div>
+</div>
+</div>
+<button id="meuBotao">Acessar</button>
+
+</div>
+</div>
+  
+<style>
+
+.opcões {
+   
+   background: #cc1;
+   border:  1px solid #ccc;  
+    border-radius: 15px;
+    max-width: 300px;
+    margin: 15px auto;
+    padding: 10px;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 600%;
+}
+    
+   .text {
+    color: white;
+    font-size: 20px;
+     font-weight: bold;
+     
+    text-align: center;
+     margin-top: 20px;
+   }    
+  
+   .description {
+   color: black;
+   font-size: 17px;     
+   font-weight: none;
+   text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+   line-height: 1.7; 
+}
+ 
+  
+  
+ .texto {
+font-size: 21px;
+font-weight: bold;
+color: black;
+margin-top: 60px;
+margin-bottom: 50px;
+text-align: center;
+padding-left: 0px; 
+
+  
+}
+  
+ .descricao{
+font-size: 20px;
+font-weight: bold;
+color: red;
+margin-top: 1px;
+margin-left: 10px; 
+text-align: center;
+   
+}
+  
+
+.hidden {
+  display: none;
+}
+
+
+
+</style>  
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplo de Rolagem de Página</title>
+<style>
+.opcões {
+    display: none; /* Esconde o container inicialmente */
+    background: #cc1;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    max-width: 300px;
+    margin: 15px auto;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 600%;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.description {
+    color: black;
+    font-size: 17px;
+    font-weight: none;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 1.7;
+}
+
+.texto {
+    font-size: 21px;
+    font-weight: bold;
+    color: black;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-left: 0px;
+}
+
+.descricao {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    margin-top: 1px;
+    margin-left: 10px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="opcões">
+    <div class="text">Compra 100% segura</div>
+    <div class="description">Garantimos que seu produto seja entregue em seu estabelecimento, portanto não se preocupe em comprar em nosso site</div>
+    <div class="text">Entrega rápida</div>
+    <div class="description">Tudo que você precisa está aqui para se tornar um empreendedor de sucesso.</div>
+    <div class="text">Frete grátis</div>
+    <div class="description">Você não precisa pagar o frete, é tudo por nossa conta, a entrega é 100% grátis.</div>
+</div>
+
+<script>
+window.addEventListener('scroll', function() {
+    var element = document.querySelector('.opcões');
+    var position = element.getBoundingClientRect();
+    
+    // Exibe o container quando estiver visível na página
+    if (position.top < window.innerHeight && position.bottom >= 0) {
+        element.style.display = 'block';
+    }
+});
+</script>
+</body>
+</html>
+
+
+<script src="seuScript.js"></script>
+
+<script>
+
+document.getElementById("meuBotao").addEventListener("click", function() {
+    window.location.href = "assuntos.html";
+});
+</script>
+
+</div>
+
+<script>
+function redirecionar(url) {
+window.location.href = url;
+}
+</script>
+ </div>
+
+
+ <footer>
+<div class="liste"onclick="redirecionar('quem somos.html')">Quem somos?</div>
+
+<div class="liste"onclick="redirecionar('privacidade.html')">Politica de privacidade</div>
+    
+<div class="brand">
+ <p>&copy;2023°-Shoppin/ todos os direitos reservados.</p>
+</div>
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+ 
